@@ -27,10 +27,10 @@ export default function PortfolioPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const links = [
-    { name: 'About', href: '/about', color: 'from-pink-500 to-purple-500' },
-    { name: 'Internship Program', href: '/about', color: 'from-pink-500 to-purple-500' },
-    { name: 'Projects', href: '/projects', color: 'from-pink-500 to-purple-500' },
-    { name: 'Youtube', href: '/', color: 'from-red-500 to-orange-400' },
+    { name: 'About', href: '/about', color: 'from-pink-600 to-purple-600' },
+    { name: 'Internship Program', href: '/about', color: 'from-pink-600 to-purple-600' },
+    { name: 'Projects', href: '/projects', color: 'from-pink-600 to-purple-600' },
+    { name: 'Youtube', href: '/', color: 'from-red-500 to-orange-500' },
   ]
 
   const stats = [
@@ -70,7 +70,7 @@ export default function PortfolioPage() {
           <PopoverGroup className="hidden lg:flex lg:gap-x-10">
             <Link href="/" className="text-lg font-semibold hover:text-gray-200 transition-colors">Home</Link>
             <Link href="/about" className="text-lg font-semibold hover:text-gray-200 transition-colors">About</Link>
-            <Link href="#projects" className="text-lg font-semibold hover:text-gray-200 transition-colors">Projects</Link>
+            <Link href="/projects" className="text-lg font-semibold hover:text-gray-200 transition-colors">Projects</Link>
             <Popover className="relative">
               <PopoverButton className="flex items-center gap-1 text-lg font-semibold hover:text-gray-200 transition-all">
                 More <ChevronDownIcon className="w-4 h-4" />
