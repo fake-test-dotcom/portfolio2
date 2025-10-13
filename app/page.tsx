@@ -190,7 +190,7 @@ export default function PortfolioPage() {
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-700"
             />
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all flex flex-col items-center justify-center text-white">
+            <div className="absolute inset-0 bg-black/0 opacity-0 group-hover:opacity-100 transition-all flex flex-col items-center justify-center text-white">
               <h3 className="text-2xl sm:text-3xl font-bold mb-2"></h3>
               <p className="text-gray-300 text-sm sm:text-base"></p>
             </div>
