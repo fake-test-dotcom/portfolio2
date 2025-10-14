@@ -148,6 +148,7 @@ export default function ProjectsPage() {
                     {project.description}
                   </p>
                   <Link
+                  style={{borderRadius:'90px'}}
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"

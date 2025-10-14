@@ -48,11 +48,11 @@ export default function PortfolioPage() {
           <div className="flex lg:flex-1">
             <Link href="/" className="flex items-center gap-3">
               <Image
-                src="/images/ar19n logo.jpg"
+                src="/images/mirror aromal.jpg"
                 alt="Logo"
                 width={45}
                 height={45}
-                className="rounded-full border border-white/20"
+                 className="w-11 h-11 object-cover rounded-full border border-white/20"
               />
               <span className="font-bold text-lg sm:text-xl tracking-wide text-white">Aromal M G</span>
             </Link>
