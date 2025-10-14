@@ -68,11 +68,11 @@ export default function PortfolioPage() {
           </div>
 
           <PopoverGroup className="hidden lg:flex lg:gap-x-10">
-            <Link href="/" className="text-lg font-semibold hover:text-gray-200 transition-colors">Home</Link>
-            <Link href="/about" className="text-lg font-semibold hover:text-gray-200 transition-colors">About</Link>
-            <Link href="/projects" className="text-lg font-semibold hover:text-gray-200 transition-colors">Projects</Link>
+            <Link href="/" className="text-lg font-semibold transition-transform transform hover:scale-150 hover:text-green-500 duration-500">Home</Link>
+            <Link href="/about" className="text-lg font-semibold transition-transform transform hover:scale-150 hover:text-green-500 duration-500">About</Link>
+            <Link href="/projects" className="text-lg font-semibold transition-transform transform hover:scale-150 hover:text-green-500 duration-500">Projects</Link>
             <Popover className="relative">
-              <PopoverButton className="flex items-center gap-1 text-lg font-semibold hover:text-gray-200 transition-all">
+              <PopoverButton className="flex items-center gap-1 text-lg font-semibold hover:scale-150 hover:text-green-500 duration-500">
                 More <ChevronDownIcon className="w-4 h-4" />
               </PopoverButton>
               <PopoverPanel className="absolute top-full mt-2 w-56 rounded-xl bg-gray-800 shadow-lg ring-1 ring-gray-700">
@@ -87,7 +87,7 @@ export default function PortfolioPage() {
           </PopoverGroup>
 
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Link href="/login" className="text-sm font-semibold hover:text-gray-200">
+            <Link href="/login" className="text-sm font-semibold hover:scale-150 hover: duration-500">
               Log in →
             </Link>
           </div>
