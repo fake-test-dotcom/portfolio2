@@ -181,11 +181,11 @@ export default function Navbar() {
             {/* Image */}
             <div className="relative">
               <Image
-                src="/images/about-us-page.jpg"
+                src="/images/aromaledit about.png"
                 alt="About section"
                 width={2432}
                 height={1442}
-                className="w-full max-w-none rounded-xl shadow-[0_0_25px_rgba(168,85,247,0.5)] ring-1 ring-gray-400/10 sm:w-228 md:-ml-4 lg:-ml-0 hover:scale-105 transition-transform duration-500"
+                className="w-full max-w-50px rounded-xl shadow-[0_0_25px_rgba(168,85,247,0.5)] ring-1 ring-gray-400/10 sm:w-228 md:-ml-4 lg:-ml-0 hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
