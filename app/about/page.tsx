@@ -14,11 +14,6 @@ import {
 } from 'react-icons/fa'
 
 import {
-  Dialog,
-  DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
   Popover,
   PopoverButton,
   PopoverGroup,
@@ -31,7 +26,6 @@ import {
   CursorArrowRaysIcon,
   FingerPrintIcon,
   SquaresPlusIcon,
-  XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
@@ -43,10 +37,6 @@ const products = [
   { name: 'Automations', description: 'Funnels that convert', href: '#', icon: ArrowPathIcon },
 ]
 
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
 
 const features = [
   {
@@ -68,7 +58,7 @@ const features = [
 ]
 
 export default function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [, setMobileMenuOpen] = useState(false)
 
   return (
     <header className="bg-gradient-to-br from-gray-950 via-purple-950 to-indigo-950 text-white">
