@@ -218,11 +218,13 @@ export default function Navbar() {
             <h3 className="text-xl font-semibold mb-4 text-purple-400">Subscribe</h3>
             <form className="space-y-4">
               <input
+                style={{borderRadius:'60px'}}
                 type="email"
                 placeholder="Your email"
                 className="w-full px-4 py-2 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none"
               />
               <button
+                style={{borderRadius:'60px'}}
                 type="submit"
                 className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-md"
               >

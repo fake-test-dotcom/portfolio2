@@ -23,9 +23,16 @@ import {
   ChevronDownIcon,
 } from '@heroicons/react/24/outline'
 
-// ✅ Import Google Font for stylish name
-import { Anton  } from 'next/font/google'
-const greatVibes =  Anton  ({
+// ✅ Import Google Fonts
+import { Anton } from 'next/font/google'
+import { Dancing_Script } from 'next/font/google'
+
+const greatVibes = Anton({
+  weight: '400',
+  subsets: ['latin'],
+})
+
+const navFont = Dancing_Script({
   weight: '400',
   subsets: ['latin'],
 })
@@ -53,15 +60,21 @@ export default function PortfolioPage() {
       <header className="fixed top-0 w-full z-50 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 shadow-lg backdrop-blur-md bg-opacity-90">
         <nav className="mx-auto flex max-w-7xl items-center justify-between p-3 sm:p-4 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
-            <Link href="/" className="flex items-center gap-3">
-              <Image
-                src="/images/Aromal black.jpg"
-                alt="Logo"
-                width={45}
-                height={45}
-                className="w-11 h-11 object-cover rounded-full border border-white/20"
-              />
-              {/* ✅ Stylish Name Only */}
+            <Link href="/" className="flex items-center gap-3 relative">
+              {/* Profile with animated RGB border but static image */}
+              <div className="w-11 h-11 rounded-full p-[2px] bg-gradient-to-r from-red-500 via-green-500 to-blue-500 animate-borderGlow">
+                <div className="w-full h-full rounded-full overflow-hidden border border-white/20">
+                  <Image
+                    src="/images/Aromal black.jpg"
+                    alt="Logo"
+                    width={45}
+                    height={45}
+                    className="w-11 h-11 object-cover rounded-full"
+                  />
+                </div>
+              </div>
+
+              {/* Stylish Name */}
               <span
                 className={`${greatVibes.className} text-3xl sm:text-4xl font-bold tracking-wide
                 bg-gradient-to-r from-yellow-300 via-pink-400 to-purple-500 bg-clip-text text-transparent
@@ -83,11 +96,26 @@ export default function PortfolioPage() {
           </div>
 
           <PopoverGroup className="hidden lg:flex lg:gap-x-10">
-            <Link href="/" className="text-lg font-semibold transition-transform transform hover:scale-150 hover:text-green-500 duration-500">Home</Link>
-            <Link href="/about" className="text-lg font-semibold transition-transform transform hover:scale-150 hover:text-green-500 duration-500">About</Link>
-            <Link href="/projects" className="text-lg font-semibold transition-transform transform hover:scale-150 hover:text-green-500 duration-500">Projects</Link>
+            <Link
+              href="/"
+              className={`${navFont.className} text-xl sm:text-2xl font-semibold text-white transition-all duration-500 transform hover:scale-125 hover:text-[rgb(255,0,255)]`}
+            >
+              Home
+            </Link>
+            <Link
+              href="/about"
+              className={`${navFont.className} text-xl sm:text-2xl font-semibold text-white transition-all duration-500 transform hover:scale-125 hover:text-[rgb(0,255,255)]`}
+            >
+              About
+            </Link>
+            <Link
+              href="/projects"
+              className={`${navFont.className} text-xl sm:text-2xl font-semibold text-white transition-all duration-500 transform hover:scale-125 hover:text-[rgb(0,255,0)]`}
+            >
+              Projects
+            </Link>
             <Popover className="relative">
-              <PopoverButton className="flex items-center gap-1 text-lg font-semibold hover:scale-150 hover:text-green-500 duration-500">
+              <PopoverButton className={`${navFont.className} flex items-center gap-1 text-xl sm:text-2xl font-semibold text-white transition-all duration-500 transform hover:scale-125 hover:text-[rgb(255,255,0)]`}>
                 More <ChevronDownIcon className="w-4 h-4" />
               </PopoverButton>
               <PopoverPanel className="absolute top-full mt-2 w-56 rounded-xl bg-gray-800 shadow-lg ring-1 ring-gray-700">
@@ -102,7 +130,10 @@ export default function PortfolioPage() {
           </PopoverGroup>
 
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Link href="/login" className="text-sm font-semibold hover:scale-150 hover: duration-500">
+            <Link
+              href="/login"
+              className={`${navFont.className} text-xl sm:text-2xl font-semibold text-white hover:scale-125 transition-all duration-500 hover:text-[rgba(42, 120, 0, 1)]`}
+            >
               Log in →
             </Link>
           </div>
@@ -113,7 +144,7 @@ export default function PortfolioPage() {
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full sm:max-w-sm bg-gray-900 px-6 py-6">
             <div className="flex items-center justify-between">
               <Link href="/" className="flex items-center gap-3">
-                <Image src="/images/Aromal black.jpg" alt="Logo" width={40} height={40} className="rounded-full" />
+                <Image src="/images/Aromal black.jpg" alt="Logo" width={40} height={40} className="rounded-full border-2 border-white/20" />
                 <span className="font-bold text-lg">Aromal M G</span>
               </Link>
               <button onClick={() => setMobileMenuOpen(false)}>
@@ -246,11 +277,13 @@ export default function PortfolioPage() {
             <h3 className="text-xl font-semibold text-white mb-4">Subscribe</h3>
             <form className="space-y-3">
               <input
+                style={{borderRadius:'60px'}}
                 type="email"
                 placeholder="Your email"
                 className="w-full px-4 py-2 rounded-md bg-gray-800 text-white placeholder-gray-500 focus:outline-none"
               />
               <button
+                style={{borderRadius:'60px'}}
                 type="submit"
                 className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-md font-semibold"
               >
@@ -264,6 +297,18 @@ export default function PortfolioPage() {
           &copy; 2025 ar19n. All rights reserved.
         </div>
       </footer>
+
+      <style jsx>{`
+        @keyframes borderGlow {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        .animate-borderGlow {
+          background-size: 200% 200%;
+          animation: borderGlow 4s linear infinite;
+        }
+      `}</style>
     </main>
   )
 }
