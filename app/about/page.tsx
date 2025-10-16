@@ -76,7 +76,7 @@ export default function Navbar() {
           <Link href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">ar19n</span>
             <Image
-              src="/images/mirror aromal.jpg"
+              src="/images/Aromal black.jpg"
               alt="Company logo"
               width={50}
               height={50}

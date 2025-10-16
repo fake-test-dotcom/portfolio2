@@ -48,7 +48,7 @@ export default function PortfolioPage() {
           <div className="flex lg:flex-1">
             <Link href="/" className="flex items-center gap-3">
               <Image
-                src="/images/mirror aromal.jpg"
+                src="/images/Aromal black.jpg"
                 alt="Logo"
                 width={45}
                 height={45}
@@ -98,7 +98,7 @@ export default function PortfolioPage() {
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full sm:max-w-sm bg-gray-900 px-6 py-6">
             <div className="flex items-center justify-between">
               <Link href="/" className="flex items-center gap-3">
-                <Image src="/images/ar19n logo.jpg" alt="Logo" width={40} height={40} className="rounded-full" />
+                <Image src="/images/Aromal black.jpg" alt="Logo" width={40} height={40} className="rounded-full" />
                 <span className="font-bold text-lg">Aromal M G</span>
               </Link>
               <button onClick={() => setMobileMenuOpen(false)}>
