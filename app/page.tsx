@@ -23,6 +23,13 @@ import {
   ChevronDownIcon,
 } from '@heroicons/react/24/outline'
 
+// ✅ Import Google Font for stylish name
+import { Anton  } from 'next/font/google'
+const greatVibes =  Anton  ({
+  weight: '400',
+  subsets: ['latin'],
+})
+
 export default function PortfolioPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -52,9 +59,17 @@ export default function PortfolioPage() {
                 alt="Logo"
                 width={45}
                 height={45}
-                 className="w-11 h-11 object-cover rounded-full border border-white/20"
+                className="w-11 h-11 object-cover rounded-full border border-white/20"
               />
-              <span className="font-bold text-lg sm:text-xl tracking-wide text-white">Aromal M G</span>
+              {/* ✅ Stylish Name Only */}
+              <span
+                className={`${greatVibes.className} text-3xl sm:text-4xl font-bold tracking-wide
+                bg-gradient-to-r from-yellow-300 via-pink-400 to-purple-500 bg-clip-text text-transparent
+                drop-shadow-[0_0_10px_rgba(255,0,255,0.5)] hover:drop-shadow-[0_0_20px_rgba(255,0,255,0.8)]
+                transition-all duration-700 ease-in-out`}
+              >
+                Aromal M G
+              </span>
             </Link>
           </div>
 
@@ -144,7 +159,6 @@ export default function PortfolioPage() {
             I specialize in crafting full-stack applications using modern technologies.
           </p>
 
-          {/* Unique hover buttons */}
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             {links.map(link => (
               <Link
