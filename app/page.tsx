@@ -62,7 +62,7 @@ export default function PortfolioPage() {
           <div className="flex lg:flex-1">
             <Link href="/" className="flex items-center gap-3 relative">
               {/* Profile with animated RGB border but static image */}
-              <div className="w-11 h-11 rounded-full p-[2px] bg-gradient-to-r from-red-500 via-green-500 to-blue-500 animate-borderGlow">
+              <div className="w-11 h-11 rounded-full p-[2px] bg-gradient-to-r from-black-500 via-black-500 to-black-500 animate-borderGlow">
                 <div className="w-full h-full rounded-full overflow-hidden border border-white/20">
                   <Image
                     src="/images/Aromal black.jpg"
