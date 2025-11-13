@@ -5,7 +5,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation'
 import {
-  FaFacebook,
   FaYoutube,
   FaInstagram,
   FaGithub,
@@ -326,7 +325,7 @@ export default function PortfolioPage() {
           />
           
           <p className="mt-6 text-gray-300 text-lg sm:text-xl leading-relaxed max-w-3xl mx-auto">
-            I'm a passionate developer from the beautiful city of Kollam in Kerala who loves building 
+            I&apos;m a passionate developer from the beautiful city of Kollam in Kerala who loves building 
             <span className="text-transparent bg-gradient-to-r from-yellow-300 to-pink-400 bg-clip-text font-semibold"> beautiful </span>
             and 
             <span className="text-transparent bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text font-semibold"> functional </span>
@@ -499,7 +498,7 @@ export default function PortfolioPage() {
               </div>
               <p className="text-gray-400 text-sm mb-6 leading-relaxed">
                 Crafting digital experiences with modern technologies and creative solutions. 
-                Let's build something amazing together!
+                Let&apos;s build something amazing together!
               </p>
               <div className="flex space-x-4">
                 {[
