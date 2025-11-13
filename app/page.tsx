@@ -572,7 +572,7 @@ export default function PortfolioPage() {
           {/* Bottom Bar */}
           <div className="mt-16 pt-8 border-t border-white/10 text-center">
             <p className="text-gray-500 text-sm">
-              &copy; 2025 Aromal M G. All rights reserved. | Crafted with 💜 and ⚡
+              &copy; 2025 ar19n. All rights reserved. | Crafted with 💜 and ⚡
             </p>
           </div>
         </div>
