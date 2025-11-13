@@ -56,6 +56,13 @@ const projects = [
       'A fun 3D car game using Next.js and React Three Fiber with realistic graphics and smooth controls.',
     link: 'https://cargamea1.vercel.app/',
   },
+    {
+    title: 'Neon Type',
+    image: '/images/neontype.jpg',
+    description:
+      'A simple neon style type speed tester game to improve your typing accuracy and speed',
+    link: 'https://neontype.vercel.app/',
+  },
 ]
 
 export default function ProjectsPage() {
