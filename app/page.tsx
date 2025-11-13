@@ -504,7 +504,7 @@ export default function PortfolioPage() {
                 {[
                   { icon: <FaGithub className="w-5 h-5" />, href: '#', color: 'hover:text-gray-300' },
                   { icon: <FaLinkedin className="w-5 h-5" />, href: '#', color: 'hover:text-blue-400' },
-                  { icon: <FaYoutube className="w-5 h-5" />, href: 'https://youtube.com/@ar19n_99.9k?si=88OvcmwN22bPfqX', color: 'hover:text-red-400' },
+                  { icon: <FaYoutube className="w-5 h-5" />, href: '#', color: 'hover:text-red-400' },
                   { icon: <FaInstagram className="w-5 h-5" />, href: '#', color: 'hover:text-pink-400' },
                 ].map((social, index) => (
                   <Link
