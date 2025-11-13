@@ -202,7 +202,7 @@ export default function PortfolioPage() {
           </div>
 
           <PopoverGroup className="hidden lg:flex lg:gap-x-8">
-            {['Home', 'About', 'Projects', 'Contact'].map((item, index) => (
+            {['Home', 'About', 'Projects',].map((item, index) => (
               <Link
                 key={item}
                 href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
