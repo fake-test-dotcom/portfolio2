@@ -100,18 +100,18 @@ export default function PortfolioPage() {
       tags: ['Next.js', 'React', 'Music']
     },
     {
-      name: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution',
-      image: '/images/project2.jpg',
-      link: '#',
-      tags: ['MERN', 'Stripe', 'Tailwind']
+      name: 'Neon Type',
+      description: 'Show off your typing skills',
+      image: '/images/neontype.jpg',
+      link: 'https://neontype.vercel.app/',
+      tags: ['MERN', 'Tailwind']
     },
     {
-      name: 'Task Manager',
-      description: 'Productivity app with real-time sync',
-      image: '/images/project3.jpg',
-      link: '#',
-      tags: ['React', 'Node.js', 'MongoDB']
+      name: 'Plur Task',
+      description: 'Your tasks done right on time',
+      image: '/images/todo1.jpg',
+      link: 'https://plurtaskm4.vercel.app/',
+      tags: ['React', 'Node.js']
     }
   ]
 
